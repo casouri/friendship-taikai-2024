@@ -11,6 +11,20 @@
   <body>
     <nav>
       <div>
+        <a class="menu-item-1" onclick="showTab('home')">
+          Home
+        </a>
+        <div role="list" class="submenu" data-tabid="home">
+          <a role="listitem" class="menu-item-2" href="#home-about">
+            About the event
+          </a>
+          <a role="listitem" class="menu-item-2" href="#home-checklist">
+            Pre-arrival checklist
+          </a>
+        </div>
+      </div>
+
+      <div>
         <a class="menu-item-1" onclick="showTab('nov-14')">
           Nov 14<br />Shogo Seminar
         </a>
@@ -21,18 +35,6 @@
           <a role="listitem" class="menu-item-2" href="#nov-14-schedule">
             Schedule
           </a>
-        </div>
-      </div>
-
-      <div>
-        <a class="menu-item-1" onclick="showTab('nov-15')">
-          Nov 15<br />Reception
-        </a>
-        <div role="list" class="submenu" data-tabid="nov-15">
-          <a role="listitem" class="menu-item-2" href="#nov-15-location">
-            Location
-          </a>
-          <a role="listitem" class="menu-item-2">Schedule</a>
         </div>
       </div>
 
@@ -66,6 +68,14 @@
         <div>Other header stuff</div>
       </header>
       <main>
+
+        <div id="home">
+          <h2 id="about">About the events</h2>
+          <p>General intro to the events.</p>
+
+          <h2 id="checklist">Pre-arrival checklist</h2>
+          <p>Here we go over lunch survey, sign waiver, some other tips etc.</p>
+        </div>
 
         <div id="nov-14">
           <h1>Shogo Seminar</h1>
