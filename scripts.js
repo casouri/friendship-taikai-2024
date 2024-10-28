@@ -1,24 +1,25 @@
-'use strict';
+"use strict";
 
 function showTab(tabId) {
-  const main = document.querySelector('main');
-  Array.from(main.children).forEach(elm => {
+  const main = document.querySelector("main");
+  Array.from(main.children).forEach((elm) => {
     if (elm.id === tabId) {
-      elm.style.display = 'block';
+      elm.style.display = "block";
     } else {
-      elm.style.display = 'none'
-    }
-  })
-  const submenus = document.querySelectorAll('nav .submenu');
-  submenus.forEach(menu => {
-    if (menu.dataset.tabid === tabId) {
-      menu.style.display = 'block';
-    } else {
-      menu.style.display = 'none';
+      elm.style.display = "none";
     }
   });
+  const submenus = document.querySelectorAll("nav .submenu");
+  submenus.forEach((menu) => {
+    if (menu.dataset.tabid === tabId) {
+      menu.style.display = "block";
+    } else {
+      menu.style.display = "none";
+    }
+  });
+  window.scrollTo(0, 0);
 }
 
 onload = () => {
-  showTab('nov-14')
-}
+  showTab("nov-14");
+};
