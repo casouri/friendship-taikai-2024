@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "EB Garamond";
+  src: url("./misc/EBGaramond-VariableFont_wght.ttf");
+  font-weight: 400 800;
+}
+@font-face {
+  font-family: "EB Garamond";
+  src: url("./misc/EBGaramond-Italic-VariableFont_wght.ttf");
+  font-style: italic;
+  font-weight: 400 800;
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  --nav-bar-width: 200px;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  font-family: "EB Garamond", ui-serif, serif;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-style: normal;
+  font-size: 14pt;
+  font-feature-settings: "onum";
+}
+
+.smallcaps {
+  font-feature-settings: "smcp";
+}
+
+.lnum {
+  font-feature-settings: "lnum";
+}
+
+/*** Sidebar */
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #be82cd;
+  width: var(--nav-bar-width);
+  height: 100vh;
+}
+nav a {
+  color: inherit;
+  text-decoration: none;
+}
+nav a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+nav .menu-item-1 {
+  display: block;
+  cursor: pointer;
+  padding: 8px;
+  font-weight: 500;
+}
+nav .menu-item-1:hover {
+  background: #ab68c1;
+}
+nav .menu-item-2 {
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  padding: 4px;
+  padding-left: 8px;
+  background: #b179c1;
+  font-weight: 400;
+}
+nav .menu-item-2:hover {
+  background: #b16dbb;
+}
+nav .submenu {
+  display: block;
+  width: 100%;
+}
+
+/*** Main panel */
+#main-div {
+  margin-left: calc(var(--nav-bar-width) + 20px);
+  height: 9000px;
+}
+
+main {
+  width: 500px;
+}
+main a {
+  color: #783978;
+  text-decoration: none;
+}
+main a:visited {
+  color: #783978;
+}
+main a:hover {
+  text-decoration: underline;
+}
+main h1, main h2, main h3 {
+  font-weight: 550;
+}
+
+header {
+  display: flex;
+  padding: 8px 0;
+  gap: 8px;
+}
+
+.header-logo {
+  height: 32px;
+}
