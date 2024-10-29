@@ -18,8 +18,9 @@ function showTab(tabId) {
     }
   });
   window.scrollTo(0, 0);
+
 }
 
 onload = () => {
-  showTab("nov-14");
+  showTab("home");
 };

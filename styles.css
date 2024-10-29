@@ -9,6 +9,11 @@
   font-style: italic;
   font-weight: 400 800;
 }
+@font-face {
+  font-family: "Boritina";
+  src: url("./misc/aaa_Boritina-Regular.otf");
+  font-weight: 400;
+}
 * {
   box-sizing: border-box;
 }
@@ -20,7 +25,7 @@ html {
 body {
   margin: 0;
   display: flex;
-  font-family: "EB Garamond", ui-serif, serif;
+  font-family: EB Garamond, ui-serif, serif;
   font-optical-sizing: auto;
   font-weight: 450;
   font-style: normal;
@@ -41,9 +46,9 @@ nav {
   position: fixed;
   left: 0;
   top: 0;
-  background: #be82cd;
   width: var(--nav-bar-width);
   height: 100vh;
+  border-right: 1px solid lightgray;
 }
 nav a {
   color: inherit;
@@ -60,19 +65,19 @@ nav .menu-item-1 {
   font-weight: 500;
 }
 nav .menu-item-1:hover {
-  background: #ab68c1;
+  background: #e2dcf5;
 }
 nav .menu-item-2 {
   display: block;
   cursor: pointer;
   width: 100%;
   padding: 4px;
-  padding-left: 8px;
-  background: #b179c1;
+  padding-left: 20px;
   font-weight: 400;
+  font-size: 0.9em;
 }
 nav .menu-item-2:hover {
-  background: #b16dbb;
+  background: #e2dcf5;
 }
 nav .submenu {
   display: block;
@@ -81,12 +86,13 @@ nav .submenu {
 
 /*** Main panel */
 #main-div {
-  margin-left: calc(var(--nav-bar-width) + 20px);
+  margin-left: var(--nav-bar-width);
   height: 9000px;
 }
 
 main {
   width: 500px;
+  padding-left: 16px;
 }
 main a {
   color: #783978;
@@ -101,11 +107,20 @@ main a:hover {
 main h1, main h2, main h3 {
   font-weight: 550;
 }
+main dt {
+  font-weight: 600;
+  margin-top: 1em;
+}
 
 header {
+  width: calc(100vw - var(--nav-bar-width));
   display: flex;
-  padding: 8px 0;
+  padding: 16px 16px 8px;
   gap: 8px;
+  border-bottom: 1px solid lightgray;
+}
+header h3 {
+  margin: 0;
 }
 
 .header-logo {
