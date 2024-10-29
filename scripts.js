@@ -1,19 +1,11 @@
 "use strict";
 
 function showTab(tabId) {
-  Array.from(document.querySelectorAll(".menu-item-1")).forEach((elm) => {
+  Array.from(document.querySelectorAll(".menu-container")).forEach((elm) => {
     if (elm.dataset.tabid === tabId) {
-      elm.style.background = "#ece7f9";
+      elm.classList.add("selected");
     } else {
-      elm.style.background = "inherit";
-    }
-  });
-
-  Array.from(document.querySelectorAll(".submenu")).forEach((elm) => {
-    if (elm.dataset.tabid === tabId) {
-      elm.style.background = "#ece7f9";
-    } else {
-      elm.style.background = "inherit";
+      elm.classList.remove("selected");
     }
   });
 
