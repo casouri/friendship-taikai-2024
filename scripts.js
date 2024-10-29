@@ -1,6 +1,22 @@
 "use strict";
 
 function showTab(tabId) {
+  Array.from(document.querySelectorAll(".menu-item-1")).forEach((elm) => {
+    if (elm.dataset.tabid === tabId) {
+      elm.style.background = "#ece7f9";
+    } else {
+      elm.style.background = "inherit";
+    }
+  });
+
+  Array.from(document.querySelectorAll(".submenu")).forEach((elm) => {
+    if (elm.dataset.tabid === tabId) {
+      elm.style.background = "#ece7f9";
+    } else {
+      elm.style.background = "inherit";
+    }
+  });
+
   const main = document.querySelector("main");
   Array.from(main.children).forEach((elm) => {
     if (elm.id === tabId) {
@@ -18,7 +34,6 @@ function showTab(tabId) {
     }
   });
   window.scrollTo(0, 0);
-
 }
 
 onload = () => {

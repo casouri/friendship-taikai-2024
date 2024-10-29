@@ -41,6 +41,10 @@ body {
   font-feature-settings: "lnum";
 }
 
+.selected {
+  background: #ece7f9;
+}
+
 /*** Sidebar */
 nav {
   position: fixed;
