@@ -28,6 +28,14 @@ function showTab(tabId) {
   window.scrollTo(0, 0);
 }
 
+function openNav() {
+  document.querySelector("nav").style.display = "block";
+}
+
+function closeNav() {
+  document.querySelector("nav").style.display = "none";
+}
+
 onload = () => {
   showTab("home");
 };

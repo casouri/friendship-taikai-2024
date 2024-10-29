@@ -53,6 +53,7 @@ nav {
   width: var(--nav-bar-width);
   height: 100vh;
   border-right: 1px solid lightgray;
+  background: white;
 }
 nav a {
   color: inherit;
@@ -145,7 +146,11 @@ header h3 {
   height: 32px;
 }
 
-#nav-switch {
+.nav-switch {
+  display: none;
+}
+
+.nav-switch-close {
   display: none;
 }
 
@@ -153,7 +158,18 @@ header h3 {
   nav {
     display: none;
   }
-  #nav-switch {
+  .nav-switch-close-div {
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    justify-content: flex-end;
+  }
+  button.nav-switch-close {
+    height: 48px;
+    border-bottom: none;
+    border-right: none;
+    border-left: 1px solid lightgray;
+  }
+  .nav-switch {
     display: flex;
     background: none;
     border: none;
