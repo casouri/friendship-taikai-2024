@@ -30,10 +30,21 @@ function showTab(tabId) {
 
 function openNav() {
   document.querySelector("nav").style.display = "block";
+  setTimeout(setupCloseNavByClickingOutside, 0);
 }
 
 function closeNav() {
   document.querySelector("nav").style.display = "none";
+}
+
+function setupCloseNavByClickingOutside() {
+  document.querySelector("#main-div").onclick = () =>
+    closeNavByClickingOutside();
+}
+
+function closeNavByClickingOutside() {
+  closeNav();
+  document.querySelector("#main-div").onclick = undefined;
 }
 
 onload = () => {
