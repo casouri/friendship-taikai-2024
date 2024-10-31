@@ -54,6 +54,12 @@ function closeNav() {
   navSwitch.onclick = () => openNav();
 }
 
+function maybeCloseNav() {
+  if (window.innerWidth <= 1023) {
+    closeNav();
+  }
+}
+
 function setupCloseNavByClickingOutside() {
   document.querySelector("main").onclick = () => closeNav();
 }

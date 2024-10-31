@@ -61,6 +61,7 @@ nav {
   height: 100vh;
   border-right: 1px solid lightgray;
   background: white;
+  overflow: auto;
 }
 nav a {
   color: inherit;
