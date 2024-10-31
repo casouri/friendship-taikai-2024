@@ -29,22 +29,33 @@ function showTab(tabId) {
 }
 
 function openNav() {
-  document.querySelector("nav").style.display = "block";
+  const nav = document.querySelector("nav");
+  const header = document.querySelector("#header-container");
+  const rect = header.getBoundingClientRect();
+
+  nav.style.display = "block";
+  nav.style.top = `${rect.height - 1}px`;
+
+  const navSwitch = document.querySelector("#nav-switch");
+  const navSwitchImg = document.querySelector("#nav-switch img");
+  navSwitchImg.src = "./misc/close.svg";
+  navSwitch.onclick = () => closeNav();
+
   setTimeout(setupCloseNavByClickingOutside, 0);
 }
 
 function closeNav() {
   document.querySelector("nav").style.display = "none";
+  document.querySelector("#main-div").onclick = undefined;
+
+  const navSwitch = document.querySelector("#nav-switch");
+  const navSwitchImg = document.querySelector("#nav-switch img");
+  navSwitchImg.src = "./misc/menu.svg";
+  navSwitch.onclick = () => openNav();
 }
 
 function setupCloseNavByClickingOutside() {
-  document.querySelector("#main-div").onclick = () =>
-    closeNavByClickingOutside();
-}
-
-function closeNavByClickingOutside() {
-  closeNav();
-  document.querySelector("#main-div").onclick = undefined;
+  document.querySelector("main").onclick = () => closeNav();
 }
 
 onload = () => {

@@ -14,12 +14,6 @@
   </head>
   <body>
     <nav>
-      <div class="nav-switch-close-div">
-        <button class="nav-switch nav-switch-close" type="button" onclick="closeNav()">
-          <img height="32px" width="32px" src="./misc/close.svg"/>
-        </button>
-      </div>
-
       <div class="menu-container" data-tabid="home">
         <a class="menu-item-1" onclick="showTab('home')" data-tabid="home">
           Home
@@ -81,7 +75,7 @@
 
     <div id="main-div">
       <div id="header-container">
-        <button class="nav-switch" type="button" onclick="openNav()">
+        <button id="nav-switch" type="button" onclick="openNav()">
           <img height="32px" width="32px" src="./misc/menu.svg"/>
         </button>
 
