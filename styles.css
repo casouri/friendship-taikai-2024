@@ -83,7 +83,7 @@ nav .menu-item-1 {
   display: block;
   cursor: pointer;
   font-weight: 500;
-  padding: 4px 8px;
+  padding: 8px;
   border-bottom: 1px solid lightgray;
   margin-bottom: -1px;
 }
@@ -94,8 +94,8 @@ nav .menu-item-2 {
   display: block;
   cursor: pointer;
   width: calc(100% - 8px);
+  padding: 4px 8px 4px 12px;
   margin-left: 8px;
-  padding: 4px 12px;
   font-weight: 400;
   font-size: 0.9em;
   border: 1px solid transparent;
@@ -111,6 +111,7 @@ nav .menu-item-2:hover {
 nav .submenu {
   display: block;
   width: 100%;
+  padding: 4px 0;
 }
 
 /*** Main panel */
