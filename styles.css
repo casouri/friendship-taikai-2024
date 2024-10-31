@@ -98,6 +98,7 @@ nav .menu-item-2:hover {
   border-top-left-radius: 999px;
   border-bottom-left-radius: 999px;
   border: 1px solid var(--hover-border);
+  border-right: none;
 }
 nav .submenu {
   display: block;
@@ -111,8 +112,8 @@ nav .submenu {
 }
 
 main {
-  width: 500px;
-  padding-left: 16px;
+  width: 600px;
+  padding-left: 32px;
 }
 main a {
   color: #783978;
@@ -136,6 +137,15 @@ main dt {
   display: flex;
 }
 
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title-container h3 {
+  text-align: center;
+}
+
 header {
   width: calc(100vw - var(--nav-bar-width));
   display: flex;
@@ -143,6 +153,7 @@ header {
   justify-content: space-between;
   border-bottom: 1px solid lightgray;
   gap: 8px;
+  align-items: center;
 }
 header .logo-container {
   display: flex;
