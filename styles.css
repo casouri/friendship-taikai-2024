@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "EB Garamond";
   src: url("./misc/EBGaramond-VariableFont_wght.ttf");
@@ -20,6 +21,7 @@
 
 html {
   --nav-bar-width: 220px;
+  --hover-bg: #e2dcf5;
 }
 
 body {
@@ -73,7 +75,7 @@ nav .menu-item-1 {
   padding: 4px 8px;
 }
 nav .menu-item-1:hover {
-  background: #e2dcf5;
+  background: var(--hover-bg);
 }
 nav .menu-item-2 {
   display: block;
@@ -85,7 +87,7 @@ nav .menu-item-2 {
   font-size: 0.9em;
 }
 nav .menu-item-2:hover {
-  background: #e2dcf5;
+  background: var(--hover-bg);
   border-top-left-radius: 999px;
   border-bottom-left-radius: 999px;
 }
@@ -195,4 +197,20 @@ header h3 {
     margin-left: 10px;
     margin-right: 30px;
   }
+}
+details.ingredients {
+  padding: 8px;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  margin: 8px 0;
+}
+details.ingredients summary {
+  cursor: pointer;
+  list-style-type: "☞  ";
+}
+details.ingredients dt {
+  margin-left: 22px;
+}
+details.ingredients dd {
+  margin-right: 24px;
 }
