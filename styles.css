@@ -226,6 +226,3 @@ table.shogo-roster td {
   padding: 4px 8px;
   border: 1px solid lightgray;
 }
-table.shogo-roster td:nth-child(3) {
-  white-space: nowrap;
-}
