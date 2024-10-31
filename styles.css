@@ -27,7 +27,7 @@ html {
 body {
   margin: 0;
   display: flex;
-  font-family: EB Garamond, ui-serif, serif;
+  font-family: EB Garamond, Noto Serif JP, ui-serif, serif;
   font-optical-sizing: auto;
   font-weight: 450;
   font-style: normal;
@@ -41,6 +41,10 @@ body {
 
 .lnum {
   font-feature-settings: "lnum";
+}
+
+.case {
+  font-feature-settings: "case";
 }
 
 .selected {
@@ -213,4 +217,15 @@ details.ingredients dt {
 }
 details.ingredients dd {
   margin-right: 24px;
+}
+
+table.shogo-roster {
+  border-collapse: collapse;
+}
+table.shogo-roster td {
+  padding: 4px 8px;
+  border: 1px solid lightgray;
+}
+table.shogo-roster td:nth-child(3) {
+  white-space: nowrap;
 }
