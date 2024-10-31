@@ -1,0 +1,281 @@
+@font-face {
+  font-family: "EB Garamond";
+  src: url("./misc/EBGaramond-VariableFont_wght.ttf");
+  font-weight: 400 800;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  src: url("./misc/EBGaramond-Italic-VariableFont_wght.ttf");
+  font-style: italic;
+  font-weight: 400 800;
+}
+
+@font-face {
+  font-family: "Boritina";
+  src: url("./misc/aaa_Boritina-Regular.otf");
+  font-weight: 400;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  --nav-bar-width: 220px;
+  --hover-bg: #e2dcf5;
+  --hover-border: #C1BCD1;
+}
+
+body {
+  margin: 0;
+  display: flex;
+
+  font-family: EB Garamond, Noto Serif JP, ui-serif, serif;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-style: normal;
+  font-size: 14pt;
+  font-feature-settings: "onum";
+}
+
+.smcp {
+  font-feature-settings: "smcp";
+}
+
+.lnum {
+  font-feature-settings: "lnum";
+}
+
+.case {
+  font-feature-settings: "case";
+}
+
+.selected {
+  background: #ece7f9;
+}
+
+/*** Sidebar */
+
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  // background: #be82cd;
+  // background: #dac7f8;
+  width: var(--nav-bar-width);
+  height: 100vh;
+  border-right: 1px solid lightgray;
+  background: white;
+  overflow: auto;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:visited {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+
+  .menu-container {
+    border-bottom: 1px solid lightgray;
+  }
+
+  .menu-item-1 {
+    display: block;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 4px 8px;
+
+    &:hover {
+      background: var(--hover-bg);
+    }
+  }
+
+  .menu-item-2 {
+    display: block;
+    cursor: pointer;
+    width: calc(100% - 8px);
+    margin-left: 8px;
+    padding: 4px 12px;
+    font-weight: 400;
+    font-size: 0.9em;
+    border: 1px solid transparent;
+    border-right: none;
+
+    &:hover {
+      background: var(--hover-bg);
+      border-top-left-radius: 999px;
+      border-bottom-left-radius: 999px;
+      border: 1px solid var(--hover-border);
+      border-right: none;
+    }
+  }
+
+  .submenu {
+    display: block;
+    width: 100%;
+  }
+}
+
+/*** Main panel */
+
+#main-div {
+  margin-left: var(--nav-bar-width);
+  height: 9000px;
+}
+
+main {
+  width: 600px;
+  padding-left: 32px;
+
+  a {
+    color: #783978;
+    text-decoration: none;
+
+    &:visited {
+      color: #783978;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  h1, h2, h3 {
+    font-weight: 550;
+  }
+
+  dt {
+    font-weight: 600;
+    margin-top: 1em;
+  }
+}
+
+#header-container {
+  display: flex;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h3 {
+    text-align: center;
+  }
+}
+
+header {
+  width: calc(100vw - var(--nav-bar-width));
+  display: flex;
+  padding: 16px 16px 8px;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+  gap: 8px;
+  align-items: center;
+
+  .logo-container {
+    display: flex;
+    gap: 8px;
+  }
+
+  h3 {
+    margin: 0;
+  }
+}
+
+.header-logo {
+  height: 32px;
+}
+
+details.ingredients {
+  padding: 8px;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  margin: 8px 0;
+
+  summary {
+    cursor: pointer;
+    list-style-type: '☞  ';
+  }
+
+  dt {
+    margin-left: 22px;
+  }
+
+  dd {
+    margin-right: 24px;
+  }
+
+}
+
+table.shogo-roster {
+  border-collapse: collapse;
+
+  td {
+    padding: 4px 8px;
+    border: 1px solid lightgray;
+  }
+}
+
+/// Mobile
+
+#nav-switch {
+  display: none;
+}
+
+@media screen and (max-width: 1023px) {
+  nav {
+    display: none;
+    border-top: 1px solid lightgray;
+  }
+
+  #main-div {
+    border-top: 1px solid lightgray;
+  }
+
+  button#nav-switch {
+    display: flex;
+    background: none;
+    border: none;
+    width: 48px;
+    border-bottom: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    align-items: center;
+    justify-content: center;
+
+    &:active {
+      background: var(--hover-bg);
+    }
+  }
+
+  #main-div {
+    margin: 0;
+  }
+
+  header {
+    // 32px is the width of the hamburger button.
+    width: calc(100vw - 48px);
+    align-items: center;
+  }
+
+  #header-container {
+    position: sticky;
+    top: 0;
+    background: white;
+  }
+
+  main {
+    width: calc(100vw - 40px);
+    margin-left: 10px;
+    margin-right: 30px;
+  }
+}
+
+// Local Variables:
+// css-indent-offset: 2
+// End:
