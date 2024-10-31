@@ -58,6 +58,18 @@ function setupCloseNavByClickingOutside() {
   document.querySelector("main").onclick = () => closeNav();
 }
 
+function reactToViewportChange() {
+  closeNav();
+  if (window.innerWidth <= 1023) {
+    document.querySelector("nav-switch").style.display = "block";
+  } else {
+    document.querySelector("nav").style.display = "block";
+    document.querySelector("nav").style.top = "0";
+    document.querySelector("nav-switch").style.display = "none";
+  }
+}
+
 onload = () => {
   showTab("home");
+  addEventListener("resize", () => reactToViewportChange());
 };
