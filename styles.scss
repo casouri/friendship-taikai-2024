@@ -41,6 +41,18 @@ body {
   line-height: 1.5;
 }
 
+:lang('zh-Hans') {
+  font-family: EB Garamond, Noto Serif SC, ui-serif, serif;
+}
+
+:lang('zh-Hant') {
+  font-family: EB Garamond, Noto Serif TC, ui-serif, serif;
+}
+
+:lang('jp') {
+  font-family: Noto Serif JP, ui-serif, serif;
+}
+
 .smcp {
   font-feature-settings: "smcp";
 }
@@ -228,6 +240,22 @@ table.shogo-roster {
   td {
     padding: 4px 8px;
     border: 1px solid lightgray;
+  }
+}
+
+table.schedule {
+  border-collapse: collapse;
+
+  td {
+    padding: 4px 8px;
+  }
+
+  td:nth-child(1) {
+    text-align: right;
+  }
+
+  br {
+    border-bottom: 1px solid lightgray;
   }
 }
 
