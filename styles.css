@@ -280,7 +280,7 @@ table.credit td:nth-child(1) {
     width: calc(100vw - 48px);
     align-items: center;
   }
-  #header-container {
+  #nav-switch {
     position: sticky;
     top: 0;
     background: white;
