@@ -129,7 +129,7 @@ nav .submenu {
 /*** Main panel */
 #main-div {
   margin-left: var(--nav-bar-width);
-  height: 9000px;
+  margin-bottom: 32px;
 }
 
 main {
