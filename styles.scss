@@ -49,8 +49,10 @@ body {
   font-family: EB Garamond, Noto Serif TC, ui-serif, serif;
 }
 
-:lang('jp') {
+:lang('ja') {
   font-family: Noto Serif JP, ui-serif, serif;
+  font-feature-settings: '';
+  line-height: 1.7;
 }
 
 .smcp {
@@ -283,6 +285,13 @@ table.credit {
 
   td:nth-child(1) {
     font-weight: 600;
+  }
+}
+
+div.hanshi-info {
+  margin: 1.5em 0;
+  p {
+    margin: 0.5em 0;
   }
 }
 
