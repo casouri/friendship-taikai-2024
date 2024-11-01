@@ -236,6 +236,7 @@ table.schedule td:nth-child(1) {
 table.schedule td.break {
   color: lightgray;
   text-align: right;
+  padding: 0 8px;
 }
 
 table.credit {
@@ -279,11 +280,6 @@ table.credit td:nth-child(1) {
   header {
     width: calc(100vw - 48px);
     align-items: center;
-  }
-  #nav-switch {
-    position: sticky;
-    top: 0;
-    background: white;
   }
   main {
     width: calc(100vw - 40px);
