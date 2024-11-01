@@ -170,6 +170,15 @@ main {
     }
   }
 
+  h1 {
+    font-size: 22pt;
+  }
+
+  h2 {
+    font-size: 18pt;
+    font-feature-settings: "smcp";
+  }
+
   h1, h2, h3 {
     font-weight: 550;
   }

@@ -150,6 +150,13 @@ main a:visited {
 main a:hover {
   text-decoration: underline;
 }
+main h1 {
+  font-size: 22pt;
+}
+main h2 {
+  font-size: 18pt;
+  font-feature-settings: "smcp";
+}
 main h1, main h2, main h3 {
   font-weight: 550;
 }
