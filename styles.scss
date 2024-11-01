@@ -254,8 +254,21 @@ table.schedule {
     text-align: right;
   }
 
-  br {
-    border-bottom: 1px solid lightgray;
+  td.break {
+    color: lightgray;
+    text-align: right;
+  }
+}
+
+table.credit {
+  border-collapse: collapse;
+
+  td {
+    padding: 4px 8px;
+  }
+
+  td:nth-child(1) {
+    font-weight: 600;
   }
 }
 

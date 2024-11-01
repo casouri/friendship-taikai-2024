@@ -222,8 +222,19 @@ table.schedule td {
 table.schedule td:nth-child(1) {
   text-align: right;
 }
-table.schedule br {
-  border-bottom: 1px solid lightgray;
+table.schedule td.break {
+  color: lightgray;
+  text-align: right;
+}
+
+table.credit {
+  border-collapse: collapse;
+}
+table.credit td {
+  padding: 4px 8px;
+}
+table.credit td:nth-child(1) {
+  font-weight: 600;
 }
 
 #nav-switch {
