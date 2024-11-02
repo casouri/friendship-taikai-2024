@@ -249,7 +249,7 @@ details.ingredients {
 
 }
 
-table.shogo-roster {
+table.roster {
   border-collapse: collapse;
 
   td {
@@ -296,11 +296,30 @@ table.credit {
   }
 }
 
+table.shinsa-numbers {
+  margin: 16px 0;
+
+  td.shinsa-number {
+    text-align: center;
+    vertical-align: middle;
+  }
+}
+
 div.hanshi-info {
   margin: 1.5em 0;
   p {
     margin: 0.5em 0;
   }
+}
+
+#shinsa-number-search {
+  display: block;
+  margin: 16px 0;
+  min-width: 24em;
+  padding: 4px;
+  border: 1px solid lightgray;
+  height: 3em;
+  border-radius: 5px;
 }
 
 /// Mobile

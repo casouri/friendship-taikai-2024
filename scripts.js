@@ -75,7 +75,48 @@ function reactToViewportChange() {
   }
 }
 
+function searchShinsaNumber(searchString) {
+  const resultDiv = document.querySelector("#shina-search-result");
+  resultDiv.innerHTML = "";
+
+  if (searchString.length === 0) {
+    return;
+  }
+
+  // if (searchString.length < 3) {
+  //   resultDiv.innerHTML =
+  //     "<p>Search text should be longer than 3 characters</p>";
+  //   return;
+  // }
+
+  const regex = new RegExp(searchString, "i");
+  const table = document.querySelector("table.shinsa-numbers tbody");
+
+  const rows = Array.from(table.children).filter((row) =>
+    Array.from(row.children).some((cell) => {
+      return cell.textContent.match(regex);
+    }),
+  );
+
+  if (rows.length) {
+    const newTable = document.createElement("table");
+    rows.forEach((row) => {
+      const newRow = row.cloneNode(true);
+      newRow.children[0].rowSpan = "1";
+      newTable.appendChild(newRow);
+    });
+    newTable.className = "roster shinsa-numbers";
+    resultDiv.appendChild(newTable);
+  } else {
+    resultDiv.innerHTML = "<p>No match</p>";
+  }
+}
+
 onload = () => {
   showTab("home");
   addEventListener("resize", () => reactToViewportChange());
+  const searchInput = document.querySelector("#shinsa-number-search");
+  searchInput.addEventListener("input", (event) => {
+    searchShinsaNumber(event.target.value);
+  });
 };
