@@ -265,8 +265,16 @@ table.schedule {
     padding: 4px 8px;
   }
 
+  td.smcp:nth-child(1) {
+    font-feature-settings: "smcp";
+  }
   td:nth-child(1) {
     text-align: right;
+    font-feature-settings: 'onum', 'tnum';
+
+    .case {
+      vertical-align: 0.1em;
+    }
   }
 
   td.break {

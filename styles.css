@@ -232,8 +232,15 @@ table.schedule {
 table.schedule td {
   padding: 4px 8px;
 }
+table.schedule td.smcp:nth-child(1) {
+  font-feature-settings: "smcp";
+}
 table.schedule td:nth-child(1) {
   text-align: right;
+  font-feature-settings: "onum", "tnum";
+}
+table.schedule td:nth-child(1) .case {
+  vertical-align: 0.1em;
 }
 table.schedule td.break {
   color: lightgray;
