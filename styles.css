@@ -283,6 +283,10 @@ div.hanshi-info p {
   border-radius: 5px;
 }
 
+.flush-right {
+  text-align: right;
+}
+
 #nav-switch {
   display: none;
 }
