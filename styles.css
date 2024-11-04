@@ -262,6 +262,7 @@ table.credit td:nth-child(1) {
 
 table.shinsa-numbers {
   margin: 16px 0;
+  width: 100%;
 }
 table.shinsa-numbers td.shinsa-number {
   text-align: center;
@@ -276,6 +277,7 @@ div.hanshi-info p {
 }
 
 #shinsa-number-search {
+  width: 100%;
   display: block;
   margin: 16px 0;
   min-width: 24em;
