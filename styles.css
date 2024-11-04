@@ -161,6 +161,8 @@ main h2 {
 }
 main h1, main h2, main h3 {
   font-weight: 550;
+  text-align: center;
+  margin: 1em;
 }
 main dt {
   font-weight: 600;
@@ -297,7 +299,7 @@ div.hanshi-info p {
 
 table.opening-schedule-en {
   border-collapse: collapse;
-  margin: 32px;
+  margin: 16px;
 }
 table.opening-schedule-en td {
   vertical-align: top;
@@ -314,7 +316,7 @@ table.opening-schedule-en td:nth-child(1) {
 
 table.opening-schedule-ja {
   border-collapse: collapse;
-  margin: 32px;
+  margin: 16px;
 }
 table.opening-schedule-ja td {
   vertical-align: top;

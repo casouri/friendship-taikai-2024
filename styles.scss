@@ -183,6 +183,8 @@ main {
 
   h1, h2, h3 {
     font-weight: 550;
+    text-align: center;
+    margin: 1em;
   }
 
   dt {
@@ -336,7 +338,7 @@ div.hanshi-info {
 
 @mixin opening-schedule {
   border-collapse: collapse;
-  margin: 32px;
+  margin: 16px;
 
   td {
     vertical-align: top;
