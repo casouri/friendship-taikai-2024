@@ -156,6 +156,7 @@ nav {
 }
 
 main {
+  margin-left: calc((100vw - 600px - var(--nav-bar-width)) / 2);
   width: 600px;
   padding-left: 32px;
 

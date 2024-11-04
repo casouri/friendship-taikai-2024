@@ -139,6 +139,7 @@ nav .submenu {
 }
 
 main {
+  margin-left: calc((100vw - 600px - var(--nav-bar-width)) / 2);
   width: 600px;
   padding-left: 32px;
 }
@@ -280,7 +281,6 @@ div.hanshi-info p {
   width: 100%;
   display: block;
   margin: 16px 0;
-  min-width: 24em;
   padding: 4px;
   border: 1px solid lightgray;
   height: 3em;
