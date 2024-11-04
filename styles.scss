@@ -334,6 +334,35 @@ div.hanshi-info {
   text-align: center;
 }
 
+@mixin opening-schedule {
+  border-collapse: collapse;
+  margin: 32px;
+
+  td {
+    vertical-align: top;
+    padding: 8px;
+  }
+
+  td:nth-child(1) {
+    white-space: nowrap;
+    padding-right: 16px;
+    font-weight: 600;
+  }
+}
+
+table.opening-schedule-en {
+  @include opening-schedule;
+
+  td:nth-child(1) {
+    text-align: right;
+  }
+}
+
+table.opening-schedule-ja {
+  @include opening-schedule;
+}
+
+
 /// Mobile
 
 #nav-switch {
