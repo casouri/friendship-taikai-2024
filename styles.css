@@ -355,6 +355,8 @@ table.opening-schedule-ja td:nth-child(1) {
 
 @media screen and (max-width: 1023px) {
   nav {
+    position: absolute;
+    height: max-content;
     display: none;
     border-top: 1px solid lightgray;
   }
