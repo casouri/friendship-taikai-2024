@@ -35,6 +35,7 @@ function openNav() {
 
   nav.style.display = "block";
   nav.style.top = `${rect.bottom - 1}px`;
+  nav.height = `${window.innerHeight - rect.bottom + 1}px`;
 
   const navSwitch = document.querySelector("#nav-switch");
   const navSwitchImg = document.querySelector("#nav-switch img");
