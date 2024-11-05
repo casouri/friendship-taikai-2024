@@ -64,8 +64,17 @@ function setupCloseNavByClickingOutside() {
   document.querySelector("main").onclick = () => closeNav();
 }
 
+let prevWindowWidth = 0;
+
 function reactToViewportChange() {
+  // On mobile, scrolling triggers resize event.
+  if (prevWindowWidth === window.innerWidth) {
+    return;
+  }
+  prevWindowWidth = window.innerWidth;
+
   closeNav();
+
   if (window.innerWidth <= 1023) {
     document.querySelector("nav-switch").style.display = "block";
   } else {
