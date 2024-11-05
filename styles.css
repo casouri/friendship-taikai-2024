@@ -261,11 +261,11 @@ table.credit td:nth-child(1) {
   font-weight: 600;
 }
 
-table.shinsa-numbers {
+table.shinsa-numbers, table.taikai-order {
   margin: 16px 0;
   width: 100%;
 }
-table.shinsa-numbers td.shinsa-number {
+table.shinsa-numbers td.shinsa-number, table.shinsa-numbers td.taikai-order, table.taikai-order td.shinsa-number, table.taikai-order td.taikai-order {
   text-align: center;
   vertical-align: middle;
   width: 3rem;
@@ -278,7 +278,7 @@ div.hanshi-info p {
   margin: 0.5em 0;
 }
 
-#shinsa-number-search {
+#shinsa-number-search, #taikai-order-search {
   width: 100%;
   display: block;
   margin: 16px 0;
