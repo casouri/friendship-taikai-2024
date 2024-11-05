@@ -345,6 +345,10 @@ table.opening-schedule-ja td:nth-child(1) {
   border-color: var(--hover-border);
 }
 
+.article-image {
+  width: min(80vw, 650px);
+}
+
 #nav-switch {
   display: none;
 }
