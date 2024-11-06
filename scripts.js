@@ -83,6 +83,7 @@ function reactToViewportChange() {
     document.querySelector("nav").style.top = "0";
     document.querySelector("nav-switch").style.display = "none";
   }
+  document.querySelector("main").onclick = undefined;
 }
 
 function searchShinsaNumber(searchString) {
