@@ -79,6 +79,10 @@ dd ol {
   margin-left: -40px;
 }
 
+table {
+  margin: auto;
+}
+
 /*** Sidebar */
 
 nav {
@@ -341,7 +345,7 @@ div.hanshi-info {
 
 @mixin opening-schedule {
   border-collapse: collapse;
-  margin: 16px;
+  margin: 16px auto;
 
   td {
     vertical-align: top;
