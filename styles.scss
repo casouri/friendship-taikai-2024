@@ -343,6 +343,15 @@ div.hanshi-info {
   text-align: center;
 }
 
+.super-super-important {
+  background: #ffeeee;
+  margin: 16px;
+  text-align: left;
+  border: 1px solid #ffaaaa;
+  border-radius: 8px;
+  padding: 16px;
+}
+
 @mixin opening-schedule {
   border-collapse: collapse;
   margin: 16px auto;
